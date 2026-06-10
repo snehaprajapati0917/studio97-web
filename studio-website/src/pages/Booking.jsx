@@ -31,7 +31,7 @@ const handleSubmit = async (e) => {
   try {
 
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/booking/",
+      "https://studio97-web.onrender.com/api/booking/",
       formData
     )
 

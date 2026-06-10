@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
   try {
 
     await axios.post(
-      "http://127.0.0.1:8000/api/contact/",
+      "https://studio97-web.onrender.com/api/contact/",
       formData
     );
 

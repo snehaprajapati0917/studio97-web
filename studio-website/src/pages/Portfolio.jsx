@@ -20,7 +20,7 @@ const fetchPhotos = async()=>{
 try{
 
 const response = await axios.get(
-"http://127.0.0.1:8000/api/portfolio/"
+"https://studio97-web.onrender.com/api/portfolio/"
 )
 
 setPhotos(response.data)
