@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.hero{
+  width:100%;
+  min-height:100vh;
+  min-height:100dvh;
+   /* height:calc(100vh - 86px); */
+ /* border-bottom:5px solid red;  */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+POSITION:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-overlay{
+
+  text-align:center;
+
+  color:white;
+
+  width:100%;
+
+  max-width:1200px;
+
+  margin:auto;
+
+}
+
+
+.small-text{
+
+font-size:60px;
+
+letter-spacing:8px;
+
+margin-bottom:20px;
+
+animation:fade 2s;
+
+}
+
+.hero-title{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:95px;
+
+line-height:85px;
+
+margin-bottom:25px;
+
+animation:slideUp 1.5s;
+}
+
+.hero-title span{
+
+color:#d8b98a;
+
+}
+
+.hero-subtitle{
+
+font-size:23px;
+
+margin-bottom:40px;
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+
+.hero-btn{
+
+padding:16px 40px;
+
+background:#b68b5e;
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.5s;
+
+box-shadow:
+0 10px 20px rgba(182,139,94,.4);
+
+}
+
+
+.hero-btn:hover{
+
+transform:translateY(-6px);
+
+background:#8f643e;
+
+box-shadow:
+0 15px 30px rgba(182,139,94,.6);
+
+}
+
+
+.hero-btn2{
+
+padding:16px 40px;
+
+background:transparent;
+
+color:white;
+
+border:2px solid white;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.5s;
+
+backdrop-filter:blur(8px);
+
+}
+
+
+.hero-btn2:hover{
+
+background:white;
+
+color:black;
+
+transform:translateY(-6px);
+
+}
+
+@keyframes slideUp{
+
+from{
+
+opacity:0;
+transform:translateY(80px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+}
+
+to{
+
+opacity:1;
+}
+
+}
+@media(max-width:768px){
+
+  .hero{
+    min-height:100dvh;
+    padding:90px 20px;
+  }
+
+  .hero-title{
+    font-size:52px;
+    line-height:1.05;
+  }
+
+  .hero-subtitle{
+    font-size:18px;
+    line-height:1.5;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .hero-btn,
+  .hero-btn2{
+    width:100%;
+    max-width:320px;
+  }
+
+}

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+.packages{
+
+padding:120px 70px;
+
+background:#f7f3ed;
+
+min-height:100vh;
+
+text-align:center;
+
+}
+
+.small-text{
+
+letter-spacing:5px;
+
+color:#9b7d5c;
+
+font-size:15px;
+
+margin-bottom:15px;
+
+}
+
+.packages h1{
+
+font-size:75px;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:60px;
+
+color:#333;
+
+}
+
+.package-grid{
+
+display:grid;
+
+grid-template-columns:repeat(5,1fr);
+
+gap:25px;
+
+align-items:stretch;
+
+margin-top:50px;
+
+}
+
+.package-card{
+  background:white;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+  padding:35px 25px;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+
+  transition:.5s;
+}
+.package-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.package-card h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:38px;
+
+margin-bottom:20px;
+
+color:#444;
+
+}
+
+.package-card h3{
+
+font-size:35px;
+
+margin-bottom:25px;
+
+color:#a77d53;
+
+}
+
+.package-card ul{
+
+list-style:none;
+
+margin-bottom:30px;
+
+}
+
+.package-card li{
+
+margin:15px 0;
+
+font-size:16px;
+
+color:#555;
+
+}
+
+.package-card button{
+
+padding:14px 35px;
+
+background:#a77d53;
+
+color:white;
+
+border:none;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.package-card button:hover{
+
+transform:scale(1.08);
+
+background:#8a6340;
+
+}
+@media(max-width:768px){
+
+  .packages{
+    padding:80px 20px;
+  }
+
+  .packages h1{
+    font-size:42px;
+    line-height:1.2;
+  }
+
+  .package-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .package-card{
+    /* padding:25px 20px; */
+    padding:30px 22px;
+    border-radius:24px;
+  }
+
+  .package-card h2{
+    /* font-size:30px;
+    margin-bottom:10px; */
+     font-size:32px;
+    line-height:1.2;
+  }
+
+  .package-card h3{
+    /* font-size:28px; */
+    margin-bottom:10px;
+     font-size:30px;
+  }
+
+  .package-card ul{
+    margin:0;
+    padding:0;
+  }
+
+  .package-card li{
+    margin:10px 0;
+  }
+
+  .package-card button{
+    width:100%;
+    margin-top:15px;
+    height:58px;
+    font-size:18px;
+    font-weight:600;
+  }
+
+}
