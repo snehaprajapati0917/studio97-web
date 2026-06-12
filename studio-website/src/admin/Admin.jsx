@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Admin.css";
@@ -16,7 +17,7 @@ function Admin() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/booking/"
+         "https://studio97-web.onrender.com/api/booking/"
       );
 
       setBookings(response.data);
@@ -32,7 +33,7 @@ function Admin() {
   try {
 
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/contact/"
+      "https://studio97-web.onrender.com/api/contact/"
     );
 
     setMessages(response.data);
@@ -49,7 +50,7 @@ function Admin() {
 const deleteBooking = async (id) => {
 
   await axios.delete(
-    `http://127.0.0.1:8000/api/booking/delete/${id}/`
+    `https://studio97-web.onrender.com/api/booking/delete/${id}/`
   )
 
   fetchBookings()
@@ -60,7 +61,7 @@ const updateStatus = async (id, newStatus) => {
   try {
 
     await axios.put(
-      `http://127.0.0.1:8000/api/booking/update-status/${id}/`,
+      `https://studio97-web.onrender.com/api/booking/update-status/${id}/`,
       {
         status: newStatus
       }
@@ -74,6 +75,7 @@ const updateStatus = async (id, newStatus) => {
 
   }
 }
+
 
 const totalBookings = bookings.length;
 
