@@ -84,7 +84,7 @@ Send us an inquiry and we'll contact you soon.
 
 <div className="detail-box">
 <h3>📍 Address</h3>
-<p>Ahmedabad, Gujarat</p>
+<p>Anand, Gujarat</p>
 </div>
 
 <div className="detail-box">

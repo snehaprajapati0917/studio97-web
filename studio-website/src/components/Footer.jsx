@@ -43,7 +43,7 @@ function Footer() {
 <div className="social-icons">
 
 <a
-href="https://instagram.com/your_username"
+href="https://instagram.com/studio_97__"
 target="_blank"
 rel="noopener noreferrer"
 >
@@ -51,7 +51,7 @@ rel="noopener noreferrer"
 </a>
 
 <a
-href="https://facebook.com/your_page"
+href="https://facebook.com/Studio 97"
 target="_blank"
 rel="noopener noreferrer"
 >
@@ -59,7 +59,7 @@ rel="noopener noreferrer"
 </a>
 
 <a
-href="https://youtube.com/@your_channel"
+href="https://youtube.com/@studio_97__"
 target="_blank"
 rel="noopener noreferrer"
 >
