@@ -4,7 +4,7 @@
 
 
 body{
-  background:#0f0f0f;
+  background:#f0ecec;
 }
 
 .admin-container{
@@ -120,15 +120,17 @@ transition:.3s;
 }
 
 .status-select{
-  background:#2a2a2a;
+   background:#2a2a2a; 
   color:white;
   border:none;
   padding:10px;
   border-radius:8px;
+  /* background-color: red; */
 }
 
+
 .delete-btn{
-  background:#e74c3c;
+  background:#e13333;
   border:none;
   color:white;
   padding:10px 20px;
